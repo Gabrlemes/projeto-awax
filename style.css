@@ -114,9 +114,9 @@ header {
   margin-top: 15px;
 }
 
-.banner a {
+.button {
   text-decoration: none;
-  display: block;
+  display: inline-block;
   background-color: #b28756;
   color: #ffffff;
   text-transform: uppercase;
@@ -124,7 +124,7 @@ header {
   font-weight: 600;
   padding: 10px 30px;
   margin-top: 30px;
-  border-radius: 19;
+  border-radius: 20px;
 }
 /* pointers para banners */
 .banner .sliders-pointers {
@@ -184,7 +184,8 @@ header {
 .default.light {
   background-color: #f7f7f7;
 }
-.default.light .section-tittle {
+.default.light .section-tittle,
+.default.light .section-body {
   color: #000000;
 }
 
@@ -192,6 +193,60 @@ header {
 .default.dark {
   background-color: #000000;
 }
-.default.dark .section-tittle {
+.default.dark .section-tittle,
+.default.dark .section-body {
   color: #fff;
+}
+
+/* css de área expecifica */
+.section-about {
+  display: flex;
+}
+
+.section-about-left {
+  flex: 1;
+}
+
+.section-about-left p {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.section-about-right {
+  margin-left: 10px;
+  width: 500px;
+}
+
+.section-about-right img {
+  width: 480px;
+  box-shadow: 0px 0px 10px #333;
+}
+/* botao de saiba mais está na interface linha 117 */
+
+/* section service */
+.section-services {
+  display: flex;
+}
+
+.section-serv {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #333;
+  padding: 15px;
+}
+/* margem na esquerda */
+.section-serv:first-child {
+  border-left: 1px solid #333;
+}
+
+.section-serv h4 {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.section-serv p {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #999;
 }
