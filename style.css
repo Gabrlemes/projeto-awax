@@ -250,3 +250,88 @@ header {
   font-size: 13px;
   color: #999;
 }
+/* área de projeto */
+.section-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-project-filters {
+  border: 1px solid #ccc;
+  background-color: #eee;
+  border-radius: 30px;
+  display: inline-block;
+  padding: 0px 20px;
+  margin: auto;
+}
+
+.section-project-filters ul,
+.section-project-filters li {
+  list-style: none;
+}
+
+.section-project-filters li {
+  display: inline-block;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 13px;
+  border-left: 1px solid #ccc;
+  color: #555;
+  cursor: pointer;
+}
+
+.section-project-filters li:hover,
+.section-project-filters li.active {
+  border-bottom: 3px solid #b28756;
+}
+/* removendo borda do lado esquerdo */
+.section-project-filters li:first-child {
+  border-left: 0;
+}
+
+/* area de fotos // feito já pensando em responsabilidade */
+.section-project-photos {
+  width: 100vw;
+  max-width: 1140px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section-project-photo {
+  width: 280px;
+}
+
+.section-project-photoarea {
+  margin: 10px;
+  width: 260px;
+  height: 160px;
+}
+
+.section-project-photoarea img {
+  width: inherit;
+  height: inherit;
+}
+
+.section-project-photoinfo {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: inherit;
+  height: inherit;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.section-project-photoinfo h5 {
+  font-size: 20px;
+  font-weight: 600px;
+}
+
+.section-project-photoarea:hover .section-project-photoinfo {
+  display: flex;
+}
