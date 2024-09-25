@@ -335,3 +335,17 @@ header {
 .section-project-photoarea:hover .section-project-photoinfo {
   display: flex;
 }
+
+/* seção da equipe */
+.bg-team {
+  background-image: url("assets/img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+}
+
+.section-team-area {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
