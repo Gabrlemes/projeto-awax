@@ -217,7 +217,7 @@ header {
 }
 
 .section-about-right {
-  margin-left: 10px;
+  text-align: center;
   width: 500px;
 }
 
@@ -463,12 +463,13 @@ header {
 }
 
 /* responsividades */
-
+/* tablet */
 @media (min-width: 450px) and (max-width: 800px) {
   .logo {
     margin-left: 30px;
   }
   .menu-mobile {
+    display: block;
     width: 45px;
     margin-right: 30px;
   }
@@ -484,7 +485,7 @@ header {
     right: 0;
   }
 
-  .menu {
+  .menu ul {
     flex-direction: column;
   }
 
@@ -499,5 +500,138 @@ header {
   .menu li.active {
     border: 0;
     color: #b28756;
+  }
+
+  .section-about {
+    flex-direction: column;
+  }
+  .section-about-left {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .section-about-right {
+    width: auto;
+  }
+
+  .section-services {
+    flex-wrap: wrap;
+  }
+  .section-serv {
+    min-width: 50%;
+  }
+
+  .section-team {
+    max-width: 580px;
+  }
+
+  .section-client-area {
+    margin-left: 40px;
+  }
+}
+
+/* responsividade celular */
+@media (max-width: 450px) {
+  .logo {
+    margin-left: 30px;
+  }
+  .menu-mobile {
+    display: block;
+    width: 45px;
+    margin-right: 30px;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 80vw;
+    height: calc(100vh - 100px);
+    top: 100px;
+    right: 0;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu li a {
+    font-weight: bold;
+    height: 60px;
+    font-size: 22px;
+    margin-left: 30px;
+    border: 0;
+  }
+
+  .menu li.active {
+    border: 0;
+    color: #b28756;
+  }
+
+  .slide-area {
+    margin: auto;
+  }
+
+  .banner h1 {
+    font-size: 30px;
+  }
+
+  .banner h2 {
+    font-size: 19px;
+  }
+
+  .section-about {
+    flex-direction: column;
+  }
+  .section-about-left {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .section-about-right {
+    width: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .section-about-right img {
+    width: 100%;
+  }
+
+  .section-services {
+    flex-wrap: wrap;
+  }
+  .section-serv {
+    min-width: 100%;
+  }
+
+  .section-project-filters {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .section-project-photo {
+    width: 320px;
+  }
+
+  .section-project-photoarea {
+    width: 300px;
+    height: 190px;
+  }
+
+  .section-team {
+    max-width: 280px;
+  }
+
+  .section-client-area {
+    margin-left: 40px;
+  }
+  .slide-area {
+    max-width: 280px;
   }
 }
